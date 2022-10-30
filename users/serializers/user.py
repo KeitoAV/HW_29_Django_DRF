@@ -45,7 +45,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def is_valid(self, raise_exception=False):
-        self._locations = self.initial_data.pop('location')
+        self._locations = self.initial_data.pop('location', [])
         return super().is_valid(raise_exception=raise_exception)
 
     def create(self, validated_data):
