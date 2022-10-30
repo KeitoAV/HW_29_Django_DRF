@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hw-29-django-drf"
+version = "0.1.0"
+description = ""
+authors = ["KeitoAV <keito_ekka@mail.ru>"]
+readme = "README.md"
+packages = [{include = "hw_29_django_drf"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg2 = "^2.9.5"
+djangorestframework = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
